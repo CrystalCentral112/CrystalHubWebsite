@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crystal Hub - Scripts</title>
-    <link rel="shortcut icon" type="image/jpg" href="sources/icon.png"/>
+    <title>SwagMode - Scripts</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta content="SwagMode" property="og:title">
+    <meta content="We are one of the best Da Hood scripting communities" property="og:description">
+    <meta content="SwagMode.net" property="og:site_name">
+    <meta content='' property='og:image'>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="theme-color" content="#fc5184">
 
-    <!-- Custom styles for this template -->
-    <link href="/sources/styles.css" rel="stylesheet">
+    <script src="scripts/scripts.js"></script>
+
 </head>
-<body>
-    <div class="container text-white">
-        <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-            <img class="bi me-2 rounded-circle" src="/sources/icon.gif" width="40" height="40" alt="">
-            <span class="fs-4">Crystal Hub</span>
-          </a>
-    
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="/scripts/" class="nav-link">Scripts</a></li>
-            <li class="nav-item"><a href="/discord/" class="nav-link">Discord</a></li>
-          </ul>
-        </header>
-      </div>
-    <div class="container-fluid no-name">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-      <div class="col-10 col-sm-8 col-lg-6">
-        <img src="https://media.discordapp.net/attachments/1026925835405512745/1043929497898061844/unknown.png" class="d-block mx-lg-auto img-fluid preview fadeSlide" alt="Crystal Hub" loading="lazy">
-      </div>
-      <div class="col-lg-6 text-white">
-<h1>Crystal Hub Script</h1>
-<p>loadstring(game:HttpGet(('http://crystalhub.ml/crystalhub/main/source.lua')))() </p>
-  </div>
-</body>
-</html>
 
-    <!-- Bootstrap & Jquery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<body>
+
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a href="/">Home</a></li>
+        </ul>
+    </div>
+
+    <div class="packagesDiv">
+        <h1>Crystal Hub Script</h1>
+        <h6>You can find crystal hub's script below.</h6>
+        
+        <div class="packages">
+
+            <div class="package scriptDiv">
+                <p>SWAGMODE</p>
+                <hr>
+                <textarea class="scriptBox script1" id="script1" type="lua" class="field left" readonly>loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002'))()</textarea>
+                <hr>
+                <div class="scriptButtons">
+                    <a href="CrystalHub.lua" download><button type="button"><span></span>Download File</button></a>
+                    <a href="#"><button type="button" onclick="copy('script1')"><span></span>Copy</button></a>
+                </div>
+            </div>
+        </div>
+
+        <h6>https://discord.gg/ws339HhAE2</h6>
+
+    </div>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"76d2b92d1de2c42f","version":"2022.11.0","r":1,"token":"3dafa54697604aa984c6bd8bdabdee84","si":100}' crossorigin="anonymous"></script>
 </body>
+
 </html>
