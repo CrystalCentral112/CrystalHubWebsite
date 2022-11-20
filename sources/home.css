@@ -1,0 +1,81 @@
+.background {
+    background-image: url(bg.svg);
+    position: relative;
+    z-index: 1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg-overlay:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    background-color: #222222;
+    opacity: 0.9;
+}
+
+body, html {
+    height: auto;
+    /* height: 100%; */
+    width: 100%;
+}
+
+.preview {
+    height: 300px;
+    transition: transform .2s;
+    border-radius: 5px;
+}
+
+.preview:hover {
+    transform: scale(1.3);
+}
+
+.fadeSlide {
+    animation: in 2s;
+}
+
+@keyframes in{
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    
+    to {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.footer {
+    background-color: #1d1d1d;
+    width: 100%;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+
+.gray-text {
+    color: #999999;
+}
+
+.no-name {
+    background-color: #1d1d1d;
+    width: 100%;
+    color: #ffffff;
+    align-items: center;
+    text-align: center;
+    padding-top: 25px;
+}
