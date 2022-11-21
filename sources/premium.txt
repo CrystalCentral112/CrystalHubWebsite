@@ -1,0 +1,26 @@
+Premium is 1250 Robux | 12 USD PayPal or CashApp
+
+Premium Includes:
+**Mod Perms**
+
+Mod Perms Information: You can control other Crystal Hub Users with chat commands.
+
+Mod Perm Commands:
+```
+!bring - Brings Crystal Hub User to you.
+!kill - Kills Crystal Hub User.
+!freeze - Freezes Crystal Hub User.
+!unfreeze - Unfreezes Crystal Hub User.
+!kick - Kicks Crystal Hub User.
+!fling - Flings Crystal Hub User.
+!say - Makes Crystal Hub User Say "Crystal Hub W".
+!nerd -- Puts nerd on the players screen.
+!rejoin -- Makes Crystal Hub User Rejoin.```
+
+**For mod prems, you must only type the command. No . or username just the command**
+**For Example. !bring**
+
+```You also get a Crown next to you're name seeable for other Crystal Hub users when you're using Mod Commands.```
+
+CashApp: $CrystalCentral
+Robux Link: https://www.roblox.com/game-pass/72588957/Crystal-Hub
