@@ -511,8 +511,6 @@ function Library:Create(table)
         end)
     end)
 	
-   game.CoreGui['dark_UI'].Name = gethui()
-
     --// Make the first tab visible
     game.CoreGui['dark_UI'].main.tabContainer.ChildAdded:Connect(function()
         game.CoreGui['dark_UI'].main:FindFirstChild('container').Visible = true
