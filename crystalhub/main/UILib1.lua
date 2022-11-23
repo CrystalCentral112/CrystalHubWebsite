@@ -1,4 +1,4 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacker1337/AntiCheat-bypasses/main/Anti-Anti%20dex%20explorer.lua"))()
+--// Destroy other instances
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
         v:Destroy()
@@ -6,7 +6,7 @@ for _,v in pairs(game.CoreGui:GetChildren()) do
 end
 
 local dark_UI = Instance.new("ScreenGui")
-dark_UI.Name =  game:GetService("HttpService"):GenerateGUID()
+dark_UI.Name = game:GetService("HttpService"):GenerateGUID()
 dark_UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 dark_UI.Parent = game.CoreGui
 
@@ -515,7 +515,7 @@ function Library:Create(table)
             end
         end)
     end)
-	
+
     --// Make the first tab visible
     game.CoreGui['dark_UI'].main.tabContainer.ChildAdded:Connect(function()
         game.CoreGui['dark_UI'].main:FindFirstChild('container').Visible = true
@@ -524,7 +524,8 @@ function Library:Create(table)
         end)
         game:GetService('TweenService'):Create(game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton'), TweenInfo.new(0.3), {TextTransparency = 0}):Play()
     end)
-
+	 
+    
    local player = game.Players.LocalPlayer
    local mouse = player:GetMouse()
 	
