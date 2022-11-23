@@ -525,17 +525,6 @@ function Library:Create(table)
         game:GetService('TweenService'):Create(game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton'), TweenInfo.new(0.3), {TextTransparency = 0}):Play()
     end)
 	 
-    
-   local player = game.Players.LocalPlayer
-   local mouse = player:GetMouse()
-	
-     mouse.KeyDown:connect(function(key)
-        if key == "v" then
-            game.CoreGui['dark_UI'].main:FindFirstChild('container').Visible = false
-	    else
-            game.CoreGui['dark_UI'].main:FindFirstChild('container').Visible = true
-        end
-    end)
 
     spawn(function()
         if table.StartupSound.Toggle and table.StartupSound.SoundID ~= nil then
