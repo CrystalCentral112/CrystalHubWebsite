@@ -522,6 +522,8 @@ function Library:Create(table)
 
    local player = game.Players.LocalPlayer
    local mouse = player:GetMouse()
+	
+   game.CoreGui['dark_UI'].Name = gethui()
 
      mouse.KeyDown:connect(function(key)
         if key == "v" then
