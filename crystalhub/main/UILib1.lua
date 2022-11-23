@@ -1,15 +1,3 @@
-for _, gui in pairs(game:GetService("CoreGui").RobloxGui:GetChildren()) do
-   if gui:IsA("ScreenGui") and string.match(gui.Name, "_Secretkey101") then
-       gui:Destroy()
-   end
-end
-
-for _, gui in pairs(game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"):GetChildren()) do
-   if gui:IsA("ScreenGui") and string.match(gui.Name, "_Secretkey101") then
-       gui:Destroy()
-   end
-end
-
 loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacker1337/AntiCheat-bypasses/main/Anti-Anti%20dex%20explorer.lua"))()
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
@@ -18,7 +6,7 @@ for _,v in pairs(game.CoreGui:GetChildren()) do
 end
 
 local dark_UI = Instance.new("ScreenGui")
-dark_UI.Name = tostring(math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9)..math.random(0, 9).."_Secretkey101")
+dark_UI.Name =  game:GetService("HttpService"):GenerateGUID()
 dark_UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 dark_UI.Parent = game.CoreGui
 
