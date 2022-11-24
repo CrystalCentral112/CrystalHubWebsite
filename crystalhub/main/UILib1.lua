@@ -521,7 +521,9 @@ function Library:Create(table)
         game:GetService('TweenService'):Create(game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton'), TweenInfo.new(0.3), {TextTransparency = 0}):Play()
     end)
     
-    
+ 
+
+game:GetService("RunService").RenderStepped:Connect(function()
  game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 	if key == "v" and game:GetService("CoreGui")["dark_UI"].main.Visible == false and game:GetService("CoreGui")["dark_UI"].shadow.Visible == false then
 		game:GetService("CoreGui")["dark_UI"].main.Visible = true
@@ -533,10 +535,8 @@ function Library:Create(table)
 		end
 	end
 end)
-	
-player = game.Players.LocalPlayer
 
-player:GetMouse().KeyDown:Connect(function(key)
+ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
 	if key == "v" and  game:GetService("CoreGui")["dark_UI"].main.Visible == false and game:GetService("CoreGui")["dark_UI"].shadow.Visible == false then
 		game:GetService("CoreGui")["dark_UI"].main.Visible = true
 	        game:GetService("CoreGui")["dark_UI"].main.Visible = true
@@ -546,6 +546,7 @@ player:GetMouse().KeyDown:Connect(function(key)
 	        game:GetService("CoreGui")["dark_UI"].shadow.Visible = false
 		end
 	end
+    end)
 end)
 
     spawn(function()
