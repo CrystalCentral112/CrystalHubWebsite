@@ -1,3 +1,4 @@
+
 --// Destroy other instances
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
@@ -6,13 +7,9 @@ for _,v in pairs(game.CoreGui:GetChildren()) do
 end
 
 local dark_UI = Instance.new("ScreenGui")
-dark_UI.Name = game:GetService("HttpService"):GenerateGUID()
+dark_UI.Name = "dark_UI"
 dark_UI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 dark_UI.Parent = game.CoreGui
-
-if syn then
-   syn.protect_gui(dark_UI)
-end
 
 local Library = {}
 local TweenService = game:GetService("TweenService")
@@ -524,7 +521,6 @@ function Library:Create(table)
         end)
         game:GetService('TweenService'):Create(game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton'), TweenInfo.new(0.3), {TextTransparency = 0}):Play()
     end)
-	 
 
     spawn(function()
         if table.StartupSound.Toggle and table.StartupSound.SoundID ~= nil then
