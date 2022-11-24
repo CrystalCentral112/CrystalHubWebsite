@@ -528,8 +528,22 @@ function Library:Create(table)
 	        game:GetService("CoreGui")["dark_UI"].main.Visible = true
 	else
 	if key == "v" and game:GetService("CoreGui")["dark_UI"].main.Visible == true and game:GetService("CoreGui")["dark_UI"].shadow.Visible == true then
-				game:GetService("CoreGui")["dark_UI"].main.Visible = false
-			        game:GetService("CoreGui")["dark_UI"].shadow.Visible = false
+		game:GetService("CoreGui")["dark_UI"].main.Visible = false
+	        game:GetService("CoreGui")["dark_UI"].shadow.Visible = false
+		end
+	end
+end)
+	
+player = game.Players.LocalPlayer
+
+player:GetMouse().KeyDown:Connect(function(key)
+	if key == "v" and  game:GetService("CoreGui")["dark_UI"].main.Visible == false and game:GetService("CoreGui")["dark_UI"].shadow.Visible == false then
+		game:GetService("CoreGui")["dark_UI"].main.Visible = true
+	        game:GetService("CoreGui")["dark_UI"].main.Visible = true
+	else
+		if key == "v" and game:GetService("CoreGui")["dark_UI"].main.Visible == true and game:GetService("CoreGui")["dark_UI"].shadow.Visible == true then
+		game:GetService("CoreGui")["dark_UI"].main.Visible = false
+	        game:GetService("CoreGui")["dark_UI"].shadow.Visible = false
 		end
 	end
 end)
