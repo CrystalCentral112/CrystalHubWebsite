@@ -1,4 +1,3 @@
-
 --// Destroy other instances
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
@@ -521,6 +520,17 @@ function Library:Create(table)
         end)
         game:GetService('TweenService'):Create(game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton'), TweenInfo.new(0.3), {TextTransparency = 0}):Play()
     end)
+    
+    
+ game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
+	if key == "v" and game:GetService("CoreGui")["dark_UI"].Visble == false then
+		ame:GetService("CoreGui")["dark_UI"].Visble = true
+	else
+		if key == "v" and game:GetService("CoreGui")["dark_UI"].Visble == true then
+			game:GetService("CoreGui")["dark_UI"].Visble = false
+		end
+	end
+end)
 
     spawn(function()
         if table.StartupSound.Toggle and table.StartupSound.SoundID ~= nil then
