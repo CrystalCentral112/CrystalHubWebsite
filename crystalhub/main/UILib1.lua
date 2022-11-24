@@ -1,3 +1,4 @@
+print("loaded")
 --// Destroy other instances
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
