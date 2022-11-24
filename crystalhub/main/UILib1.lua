@@ -523,11 +523,11 @@ function Library:Create(table)
     
     
  game.Players.LocalPlayer:GetMouse().KeyDown:Connect(function(key)
-	if key == "v" and game:GetService("CoreGui")["dark_UI"].Visible == false then
-		ame:GetService("CoreGui")["dark_UI"].Visible = true
+	if key == "v" and game:GetService("CoreGui")["dark_UI"].main.Visible == false then
+		game:GetService("CoreGui")["dark_UI"].main.Visible = true
 	else
-		if key == "v" and game:GetService("CoreGui")["dark_UI"].Visible == true then
-			game:GetService("CoreGui")["dark_UI"].Visible = false
+		if key == "v" and game:GetService("CoreGui")["dark_UI"].main.Visible == true then
+			game:GetService("CoreGui")["dark_UI"].main.Visible = false
 		end
 	end
 end)
