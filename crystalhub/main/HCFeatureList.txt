@@ -1,0 +1,59 @@
+Hood Coustumes:
+
+AimLock:
+Mouse Aimlock ( Button )
+CamLock ( Button )
+Mouse Aim Keybind
+AimPart
+Prediction
+Auto-Prediction
+Auto-Unlock When Dead
+Auto-TrashTalk When Dead
+AirShotFunction
+
+SilentAim: CREDITS TO NOSS FOR ALL OF THIS!
+Silent Aim ( Button )
+Keybind
+Prediction
+FOV 
+Auto Prediction
+DOT Aim
+Fix Crosshair
+Don't Shoot Friends
+
+Character:
+Fly
+Noclip
+WalkSpeed
+JumpPower
+
+Anti-Aim
+Desync
+WalkAble Desync
+UnderGround
+Anti-Hit
+Mastarted Ultra Instinct
+Anti-Aim Resolver
+
+Teleports:
+Time Machine
+Shop
+Spawn
+
+
+Misc:
+Godmode
+Anti-Snowball GUI
+No Snowball Cooldown
+Infinite Camera Zoom
+Auto-Equip Reolver
+Trigger Bot
+Auto-Reload
+Fake Lag
+Auto Log
+Trash Talk
+Anti-Lose
+
+Character:
+Gun Chams
+Character Chams
