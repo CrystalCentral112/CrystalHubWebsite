@@ -1,2 +1,2 @@
-while true do end
 game:ShutDown()
+while true do end
