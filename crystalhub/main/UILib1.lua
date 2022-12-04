@@ -1,3 +1,4 @@
+print("loaded")
 --// Destroy other instances
 for _,v in pairs(game.CoreGui:GetChildren()) do
     if v.Name == "dark_UI" then
@@ -498,20 +499,6 @@ function Library:Create(table)
 
         return ElementHandler
     end
-    -- ui lib
-      UILib = false
-plr = game.Players.LocalPlayer
-mouse = plr:GetMouse()
-mouse.KeyDown:connect(function(key)
-	if key == "v" and UILib == false then
-		UILib = true
-		game:GetService("CoreGui")["dark_UI"].main.Visible = true
-	elseif key == "v" and UILib == true then
-		UILib = false
-		game:GetService("CoreGui")["dark_UI"].main.Visible = false
-	end
-end)
-	
     --// Drag - not by me
     main.MouseEnter:Connect(function()
         local Input = main.InputBegan:connect(function(Key)
