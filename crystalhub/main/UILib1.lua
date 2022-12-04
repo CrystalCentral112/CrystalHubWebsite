@@ -498,6 +498,20 @@ function Library:Create(table)
 
         return ElementHandler
     end
+    -- ui lib
+      UILib = false
+plr = game.Players.LocalPlayer
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(function(key)
+	if key == "v" and UILib == false then
+		UILib = true
+		game:GetService("CoreGui")["dark_UI"].main.Visible = true
+	elseif key == "v" and UILib == true then
+		UILib = false
+		game:GetService("CoreGui")["dark_UI"].main.Visible = false
+	end
+end)
+	
     --// Drag - not by me
     main.MouseEnter:Connect(function()
         local Input = main.InputBegan:connect(function(Key)
@@ -511,19 +525,6 @@ function Library:Create(table)
             end
         end)
     end)
-    
-    superhuman = false
-plr = game.Players.LocalPlayer
-mouse = plr:GetMouse()
-mouse.KeyDown:connect(function(key)
-	if key == "v" and superhuman == false then
-		superhuman = true
-		game:GetService("CoreGui")["dark_UI"].main.Visible = true
-	elseif key == "v" and superhuman == true then
-		superhuman = false
-		game:GetService("CoreGui")["dark_UI"].main.Visible = false
-	end
-end)
 
     spawn(function()
         if table.StartupSound.Toggle and table.StartupSound.SoundID ~= nil then
