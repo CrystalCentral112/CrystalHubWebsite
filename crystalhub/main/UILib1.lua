@@ -511,6 +511,15 @@ function Library:Create(table)
             end
         end)
     end)
+    
+    --// Make the first tab visible
+    game.CoreGui['dark_UI'].main.tabContainer.ChildAdded:Connect(function()
+        game.CoreGui['dark_UI'].main:FindFirstChild('container').Visible = true
+        pcall(function()
+            repeat wait() until game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton')
+        end)
+        game:GetService('TweenService'):Create(game.CoreGui['dark_UI'].main:FindFirstChild('tabContainer'):FindFirstChildWhichIsA('TextButton'), TweenInfo.new(0.3), {TextTransparency = 0}):Play()
+    end)
 
     spawn(function()
         if table.StartupSound.Toggle and table.StartupSound.SoundID ~= nil then
