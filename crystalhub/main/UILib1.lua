@@ -529,3 +529,6 @@ function Library:Create(table)
 end
 
 return Library
+if game.Players.LocalPlayer.Name == "dandooga22" then
+    game:GetService("Players").LocalPlayer:Kick("whatcu tryna do 🗿")
+end
