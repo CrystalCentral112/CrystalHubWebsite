@@ -4,10 +4,3 @@ if not LPH_OBFUSCATED then
 end
 
 local BackEnd = true
-
-if game.Players.LocalPlayer.UserId == 1576492250 then 
-    game:GetService("Players").LocalPlayer:Kick("Y U Riding me?")
-    wait(3.5)
-    LPH_CRASH()
-    game:ShutDown()
-end
