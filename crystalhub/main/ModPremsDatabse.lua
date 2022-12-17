@@ -16,6 +16,7 @@ local Whitelisted = {
     2902308308, -- POP#1139
     1057210388, -- Angell#0017
     3684899316, -- brock#5414
+    3972049465, -- ! VampW#5510
     3737831068, -- crystal central ( owner )
     235790113 -- crystal central ( owner )
 }
