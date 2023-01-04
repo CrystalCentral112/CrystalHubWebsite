@@ -6,6 +6,7 @@ _G.WhitelistedRecepits {
   "CH_3676748994", -- [ 1042318511281803315]
   "CH_5027415492", -- [ 886432617300381746 ]
   "CH_3659554221" --  [ 763749928543322142 ]
+  "CH_4518010644" --  [ 540263976966291458 ]
 }
 
 _G.OpenRecpits = {
@@ -13,7 +14,7 @@ _G.OpenRecpits = {
   "CH_3676748994", -- [ Open : False ]
   "CH_5027415492", -- [ Open : False ]
   "CH_3659554221", -- [ Open : False ]
-  "CH_4518010644", -- [ Open : True ]
+  "CH_4518010644", -- [ Open : False ]
   "CH_8799435030", -- [ Open : True ]
   "CH_9755465189", -- [ Open : True ]
   "CH_6149853644", -- [ Open : True ]
@@ -29,7 +30,7 @@ _G.OpenRecpits = {
 }
 
 if not _G.OpenRecpits or _G.WhitelistedRecepits then
-    geturn game:GetService("Players"),LocalPlayer:Kick("404 Not Found - Recepit Tampering Detected") 
+    game:GetService("Players"),LocalPlayer:Kick("404 Not Found - Recepit Tampering Detected") 
     _G.ohwelcome = false
     _G.rgoiogu3ruhhhg2ou2go = false
     _G.rueu3rui3hoge = false
